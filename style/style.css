@@ -1,0 +1,280 @@
+@import 'fonts/stylesheet.css';
+@import 'fonts/media.css';
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+:root{
+    --f100 : "Montserrat-Regular";
+    --f600 : "Montserrat-Bold";
+    --fR100 : "MyriadPro-Regular";
+    --fR600 : "MyriadPro-Bold";
+    --color : #314a5b;
+    --red_color: #fa5c65;
+}
+
+ /* ========== header ========== */
+ /* ========== nav ==========  */
+.header{
+    background: url("../img/header_bg.png")no-repeat center center/ cover;
+    min-height: 100vh;
+}
+.header_nav_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;    
+}
+.header_nav_list_ul{
+    display: flex;
+}
+.header_nav_list_li{
+    margin-right: 36px;
+}
+.header_nav_list_link{
+    font-family: var(--f100);
+    font-size: 17px;
+    color: #263742;
+    text-transform: uppercase;
+}
+.header_nav_list_link:hover{
+    /* color: ; */
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+.header_logo{
+    padding: 65px 22px 6px 22px;
+    background: #fa5c65;
+    font-family: var(--fR600);
+    font-size: 23px;
+    color: #ffffff;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+.header_nav_list_icons{
+    height: 100%;
+}
+.header_nav_list_icon{
+    font-size: 20px;
+    color: #fa5c65;
+    margin-right: 10px;
+}
+/* ========== /nav ==========  */
+/* ========== /header ==========  */
+/* ========== header_content ==========  */
+.header_content{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.header_title{
+    font-family: var(--f600);
+    font-size: 48px;    
+    color: #314a5b;
+    max-width: 580px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.header_span{
+    color: #fa5c65;
+}
+.header_description{
+    font-family: var(--fR100);
+    font-size: 20px;
+    color: var(--color);
+    margin-top: 47px;
+    margin-bottom: 46px;
+}
+.header_button{
+    font-family: var(--fR100);
+    font-size: 21px;
+    color: #ffffff;
+    padding: 24px 38px 24px 28px;
+    background: #fa5c65;
+    border-radius: 5px;
+}
+/* ========== /header_content ==========  */
+/* ==========  <section class="sentence"> ==========  */
+.sentence{
+    /* max-height: 300px; */
+    padding-top: 70px;
+    margin-bottom: 85px;
+}
+.sentence_cards_content{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.sentence_card{
+    max-width: 265px;
+    max-height: 210px;
+}
+.sentence_card:nth-of-type(1),
+.sentence_card:nth-of-type(2){
+    margin-right: 100px;
+}
+.sentence_card_title{
+    font-family: var(--f600);
+    font-size: 34px;
+    color: var(--color);
+    margin-bottom: 40px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+.sentence_card_two_title{
+    font-size: 30px;
+}
+.sentence_card_span{
+    color: var(--red_color);
+}
+.sentence_card_description{
+    font-family: var(--fR100);
+    font-size: 18px;
+    color: #9aa0ab;
+    line-height: 22px;
+    margin-bottom: 36px;
+}
+.sentence_card_transition{
+    font-family: var(--f100);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--red_color);
+    margin-right: 21px;
+    
+}
+.arrow-up{
+    transform: rotate(90deg);
+    color: var(--red_color);
+    font-size: 14px;
+}
+/* ========== </section> ==========  */
+/* ==========  <section class="portfolio">  ==========  */
+
+.portfolio_content{
+    min-width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 105px;
+}
+.portfolio_left_content{
+    width: 50%;
+    height: 100%;
+}
+.portfolio_left_img{
+    min-width: 100%;
+    min-height: 100%;
+}
+.portfolio_right_content{
+    /* width: 50%; */
+    height: 100%;
+    max-width: 350px;
+}
+.portfolio_right_title{
+    font-family: var(--f600);
+    font-size: 51px;
+    color: var(--color);
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+.portfolio_rigth_span{
+    color: var(--red_color);
+}
+.portfolio_rigth_description{
+    font-family: var(--fR100);
+    font-size: 17px;
+    color: #9aa0ab;
+    line-height: 22px;
+    margin-bottom: 31px;
+}
+.portfolio_rigth_description_span{
+    margin-bottom: 23px;
+}
+.arrow-up_more{
+    margin-left: 24px;
+}
+/* ========== </section> ==========  */
+/* ==========  <section class="team">  ==========  */
+.team_title{
+    font-family: var(--f600);
+    font-size: 32px;
+    color: var(--color);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.team_title_span{
+    color: var(--red_color);
+}
+.team_description{
+    font-family: var(--fR100);
+    font-size: 16px;
+    color: #9aa0ab;
+    margin-bottom: 40px;
+}
+.team_cards_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #000;
+    
+}
+.team_card{
+    display: flex;
+    align-items: center;
+}
+.team_card_left_img{
+    max-height: 260px;
+    max-width: 160px;
+}
+.team_card_right{
+    margin-left: 15px;
+    margin-right: 45px;
+}
+.team_card_title{
+    font-family: var(--f600);
+    font-size: 22px;
+    color: var(--color);
+    margin-bottom: 30px;
+}
+.team_card_description_span{
+    font-family: var(--fR100);
+    font-size: 14px;
+    color: var(--red_color);
+    margin-bottom: 20px;
+}
+.team_card_description{
+    font-family: var(--fR100);
+    font-size: 14px;
+    color: #9aa0ab;
+    line-height: 20px;
+    max-width: 140px;
+}
+/* ========== </section> ==========  */
+/* ========== footer ==========  */
+.footer_content{
+    margin-top: 30px;
+    margin-bottom: 165px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_icons{
+    font-size: 30px;
+    color: #9aa0ab;
+    margin-right: 15px;
+}
+.footer_right_description{
+    font-family: var(--fR100);
+    font-size: 17px;
+    color: #9aa0ab;
+}
+/* ========== /footer ==========  */
